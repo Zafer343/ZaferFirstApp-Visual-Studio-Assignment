@@ -1,0 +1,83 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Online Music Video Player</h1>
+    <svg class="shape" id="circle">
+        <circle cx="75" cy="75" r="60" class="shape-inner">
+            <animateTransform attributeName="transform"
+                              begin="0s"
+                              dur="4s"
+                              type="rotate"
+                              from="0 90 90"
+                              to="360 90 90"
+                              repeatCount="indefinite" />
+        </circle>
+    </svg>
+
+    <svg class="shape" id="square">
+        <rect x="35" y="35" width="120" height="120"
+              class="shape-inner">
+            <animateTransform attributeName="transform"
+                              begin="0s"
+                              dur="4s"
+                              type="rotate"
+                              from="0 95 95"
+                              to="360 95 95"
+                              repeatCount="indefinite" />
+        </rect>
+    </svg>
+
+    <svg class="shape" id="triangle">
+        <polygon points="85 10, 160 140, 10 140" class="shape-inner">
+            <animateTransform attributeName="transform"
+                              begin="0s"
+                              dur="4s"
+                              type="rotate"
+                              from="0 100 100"
+                              to="360 100 100"
+                              repeatCount="indefinite" />
+        </polygon>
+    </svg>
+
+    <svg class="shape" id="pentagon">
+        <polygon class="shape-inner" style="stroke: rgb(0, 0, 0); fill: none; stroke-width: 3px;" points="10.98 59.371 76.741 10.205 141.97 59.371 116.944 137.114 36.184 136.669">
+            <animateTransform attributeName="transform"
+                              begin="0s"
+                              dur="4s"
+                              type="rotate"
+                              from="0 90 90"
+                              to="360 90 90"
+                              repeatCount="indefinite" />
+        </polygon>
+    </svg>
+</div>
+
+<div class="content text-center">
+    <header>
+        <h1>Play my your favorit Songs</h1>
+    </header>
+
+    <!-- Embed YouTube Video. Replace 'VIDEO_ID' with your video's ID -->
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/JtPbk7WvHAQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <section id="artist">
+        <h2>About the Artist</h2>
+        <p>"Bella Ciao" is a traditional Italian folk song that has had various artists and interpreters over the years, but its roots are not attributed to a single artist. The song's history and significance extend beyond just music, as it became an anthem for the Italian partisans during World War II. Here's a brief overview:</p>
+        <!-- Artist Info -->
+        <h3>Origin of "Bella Ciao"</h3>
+        <p>"Bella Ciao" originated as a song of the mondine, the rice-weeders in the wetlands of Northern Italy in the late 19th and early 20th centuries. The original version of the song was about the harsh working conditions of these rice-weeders. They would work in the water with their backs bent over for hours, leading to significant physical pain. The song voiced their desire for better working conditions and the hope for a better future.</p>
+        <h3>The Partisan Version</h3>
+        <p>
+            During World War II, "Bella Ciao" was adapted and adopted by the anti-Fascist resistance in Italy. The lyrics were changed to reflect the struggles and the hopes of the partisans fighting against the Fascist and Nazi occupiers. In this context, the song transformed into an anthem of freedom and resistance against oppression.
+            This partisan version tells the story of a partisan who wakes up one morning and discovers that he's on the edge of death. He reflects on the idea of dying for freedom and wishes to be buried on the mountain beneath a beautiful flower – as a symbol of the sacrifices made for liberty.
+        </p>
+
+    </section>
+</div>
+
